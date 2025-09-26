@@ -44,7 +44,3 @@ Eğitim ve doğrulama grafikleri dikkatle incelenmiş, modelin **aşırı uyum (
 Bu projenin tüm teknik detaylarına, kodlarına ve çıktılara aşağıdaki Kaggle not defterinden ulaşabilirsiniz.
 
 [https://www.kaggle.com/code/smoke78/cnn-working]
-
-Bu projenin tüm teknik detaylarına, kodlarına ve çıktılara aşağıdaki Kaggle not defterinden ulaşabilirsiniz.
-
-[Kaggle Notebook Linkiniz BURAYA Gelecek]
