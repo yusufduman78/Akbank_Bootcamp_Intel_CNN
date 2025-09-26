@@ -1,27 +1,50 @@
-# Akbank_Bootcamp_Intel_CNN
+# Akbank Derin Öğrenme Bootcamp Projesi: Görüntü Sınıflandırma
+### Intel Image Classification Veri Seti Üzerine CNN Mimarisi Uygulaması
 
-# Akbank Derin Öğrenme Bootcamp Projesi: Intel Görüntü Sınıflandırma
+Bu proje, Akbank Derin Öğrenme Bootcamp'i kapsamında derin öğrenme pratiklerini ve model geliştirme tekniklerini uygulamak amacıyla oluşturulmuştur. Proje, bir **Convolutional Neural Network (CNN)** mimarisi kullanarak görsel bir sınıflandırma problemini çözmeyi hedeflemektedir.
 
-## Projenin Amacı
-Bu proje, Intel Image Classification veri setini kullanarak 6 farklı coğrafi ortamı (Binalar, Orman, Buzul, Dağ, Deniz, Sokak) yüksek doğrulukla sınıflandıran derin bir Evrişimsel Sinir Ağı (CNN) modeli geliştirmeyi amaçlamaktadır. Proje, derin öğrenme pratiklerini, veri çoğaltmayı ve model yorumlama tekniklerini kapsamaktadır.
+## 📌 Projenin Amacı
 
-## Veri Seti Hakkında Bilgi
-* **Veri Seti Adı:** Intel Image Classification
-* **Sınıf Sayısı:** 6 (Multiclass Classification)
-* **Boyut:** Yaklaşık 14.000 eğitim ve 3000 test görüntüsü.
-* **Ön İşleme:** Görüntüler 150x150 boyutuna yeniden boyutlandırılmış ve eğitim seti için **Rotation** ve **Horizontal Flip** içeren **Veri Çoğaltma (Data Augmentation)** uygulanmıştır.
+Bu çalışmanın ana amacı, **Intel Image Classification** veri setini kullanarak 6 farklı coğrafi ortamı (Binalar, Orman, Buzul, Dağ, Deniz, Sokak) yüksek doğrulukla sınıflandıran bir model oluşturmaktır. Proje süreci, veri analizi, model eğitimi, performans değerlendirme ve yorumlama gibi derin öğrenmenin temel adımlarını içermektedir.
 
-## Kullanılan Yöntemler
-1.  **Framework:** PyTorch
-2.  **Model Mimarisi:** Derin bir CNN yapısı kullanılmıştır. Model, 4 Evrişimsel Katman, 3 Havuzlama Katmanı, Dropout (0.5 ve 0.3 oranlarında) ve 3 Tam Bağlantılı Katman içermektedir.
-3.  **Optimizasyon:** Hiperparametre optimizasyonu sonucunda **Adam** optimizasyon algoritması ve optimize edilmiş **$0.0001$ Öğrenme Oranı (Learning Rate)** kullanılmıştır.
-4.  **Değerlendirme:** Accuracy, Loss grafikleri, Confusion Matrix ve modelin karar verme bölgelerini gösteren **Grad-CAM** görselleştirmesi ile değerlendirilmiştir.
+## 📂 Veri Seti Hakkında
 
-## Elde Edilen Sonuçlar Özeti
+Projede kullanılan veri seti Kaggle'dan temin edilmiştir. Veri seti, 6 farklı sınıfa ait yaklaşık **25,000 eğitim** ve **14,000 test** görüntüsü içermektedir.
+
+**Veri Ön İşleme Adımları:**
+* Görüntüler **150x150 piksel** boyutuna yeniden ölçeklendirilmiştir.
+* Modelin genelleme yeteneğini artırmak için **Veri Çoğaltma (Data Augmentation)** teknikleri (Rotasyon, Yatayda Çevirme vb.) uygulanmıştır.
+
+## 🛠 Kullanılan Yöntemler ve Model Mimarisi
+
+* **Framework:** PyTorch
+* **Optimizasyon:** Hiperparametre optimizasyonu sonucunda **Adam** optimizasyon algoritması ve optimize edilmiş **0.0001 Öğrenme Oranı (Learning Rate)** kullanılmıştır.
+* **Model Mimarisi:** Proje yönergelerine uygun olarak, modelin karmaşık desenleri öğrenmesi için derin bir CNN mimarisi tasarlanmıştır. Modelin temel bileşenleri:
+    * **Evrişimsel Katmanlar (Convolutional Layers)** 
+    * **Havuzlama Katmanları (Pooling Layers)** 
+    * **Dropout Katmanları** (0.5 ve 0.3 oranlarında) 
+    * **Tam Bağlantılı Katmanlar (Dense Layers)** 
+
+## 📈 Elde Edilen Sonuçlar ve Değerlendirme
+
+Modelin performansı, çeşitli metrikler ve görselleştirmelerle detaylı bir şekilde değerlendirilmiştir.
+
 * **En İyi Doğrulama Doğruluğu:** %85.36
-* **Optimizasyon Kazanımı:** Öğrenme oranının $0.001$'den $0.0001$'e düşürülmesi, doğruluğu **%4.49** oranında artırmıştır.
+* **Değerlendirme Raporları:** Accuracy ve Loss grafikleri, Confusion Matrix ve Classification Report kullanılmıştır.
+* **Model Yorumlama:** Modelin hangi bölgelere odaklandığını göstermek için **Grad-CAM** görselleştirmeleri uygulanmıştır.
+
+### Önemli Not: Overfitting/Underfitting
+
+Eğitim ve doğrulama grafikleri dikkatle incelenmiş, modelin **aşırı uyum (overfitting)** yapmaması için gerekli önlemler alınmıştır.
 
 ---
 
-### Kaggle Notebook Linki
+### 🌐 Proje Bağlantısı
+
+Bu projenin tüm teknik detaylarına, kodlarına ve çıktılara aşağıdaki Kaggle not defterinden ulaşabilirsiniz.
+
 [https://www.kaggle.com/code/smoke78/cnn-working]
+
+Bu projenin tüm teknik detaylarına, kodlarına ve çıktılara aşağıdaki Kaggle not defterinden ulaşabilirsiniz.
+
+[Kaggle Notebook Linkiniz BURAYA Gelecek]
