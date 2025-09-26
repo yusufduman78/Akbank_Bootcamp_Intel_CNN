@@ -24,4 +24,4 @@ Bu proje, Intel Image Classification veri setini kullanarak 6 farklı coğrafi o
 ---
 
 ### Kaggle Notebook Linki
-[BURAYA KAGGLE NOTEBOOK'UNUZUN FİNAL LİNKİNİ EKLEYİN]
+[https://www.kaggle.com/code/smoke78/cnn-working]
